@@ -1,14 +1,14 @@
-function pushFront(array, x) {
+function pushFront(array, val) {
     for (var i = array.length - 1; i >= 0; i--) {
         array[i+1] = array[i];
     }
-    array[0] = x; 
+    array[0] = val; 
     return array
 }
 
 var array = [1,2,3,4,5];
-var x = 1
-console.log(pushFront(array, x))
+var val = 1
+console.log(pushFront(array, val))
 
 "----------------------------------------------------------------"
 
@@ -30,15 +30,15 @@ console.log(popFront(array))
 "----------------------------------------------------------------"
 
 
-function insertAt(array, val, y) {
+function insertAt(array, val, index) {
 
-    for (var i = array.length - 1; i >= y; i--) {
+    for (var i = array.length - 1; i >= index; i--) {
 
         arr[i+1] = arr[i];
 
     }
 
-    arr[y] = val; 
+    arr[index] = val; 
 }
 
 console.log(array, 3, 4)
